@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sushi</title>
+</head>
+
+<body>
+
+    <section class="make-order">
+        <header class="header">
+
+            <div class="go-back">
+                <div class="go-back-arrow"></div>
+                <button class="go-back-info">Продолжить выбор</button>
+            </div>
+
+            <p class="contact-info">
+                <span class="phone-description">Наш телефон</span>
+                <span class="phone-number">
+                +996 705 188 955
+                </span>
+                <span class="phone-number">+996 555 188 955
+                </span>
+                <span class="work-hours">
+                    <img src="./img/clock.png" alt="clock">
+                    работаем с 10:00 до 00:00
+                </span>                
+
+            </p>
+            
+        </header>
+
+        <form class="form">
+            <h2>Ваши данные</h2>
+
+            <div class="part-of-form">
+                <div class="part-left">
+                    <div class="basic-info">
+                        <input type="tel" placeholder="Телефон" class="basic-input tel-input">
+                        <input type="text" placeholder="Имя" class="basic-input name-input">
+                    </div>
+
+                    <div class="type-of-payment">
+                        <input class="radio-base" type="radio" name="payType" id="cash" checked>
+                        <label class="basic-input radio-input left" for="cash">Наличные</label>
+
+                        <input class="radio-base" type="radio" name="payType" id="card">
+                        <label class="basic-input radio-input right" for="card">Картой</label>
+                    </div>
+
+                    <div class="change">
+                        <div class="change-arrow"></div>
+                        <p class="change-input">Подготовить сдачу с</p>
+                        <input type="text" placeholder="Сумма" class="change-input change">
+                    </div>
+
+                    <div class="comments-to-order">
+                        <input type="text" placeholder="Комментарий к заказу" class="comments">
+                    </div>
+
+                    <div class="more-options">
+                        <p class="more-ortions-text">Палочки + соусник обычные</p>
+                        <div class="remove"></div>
+                        <p class="more-options-ten">10</p>
+                        <div class="add"></div>
+                    </div>
+
+                    <div class="more-options">
+                        <p class="more-ortions-text">Палочки + соусник обычные</p>
+                        <div class="remove"></div>
+                        <p class="more-options-ten">10</p>
+                        <div class="add"></div>
+                    </div>
+
+                    <div class="promocode">
+                        <input type="text" placeholder="Введите промокод" class="promo">
+                    </div>
+                    
+                </div>
+
+                <div class="part-right">            
+                    <div class="take-away">
+                        <input class="radio-base" type="radio" name="take-away" id="сourier" checked>
+                        <label class="basic-input radio-input left" for="сourier">Курьером</label>
+
+                        <input class="radio-base" type="radio" name="take-away" id="pickup">
+                        <label class="basic-input radio-input right" for="pickup">Самовывоз</label>
+                    </div>
+
+                    <div class="adress-info">
+                        <input type="text" placeholder="Улица" class="adress-input street-input">
+                        <input type="text" placeholder="Дом" class="adress-input house-input">
+                    </div>
+
+                    <div class="adress-info-details">
+                        <input type="text" placeholder="Кв" class="adress-input aprt-input">
+                        <input type="text" placeholder="Подъезд" class="adress-input entrance-input">
+                        <input type="text" placeholder="Этаж" class="adress-input floor-input">
+                        <input type="text" placeholder="Код" class="adress-input code-input">
+                    </div>
+
+                    <div class="delivery">
+                        <input class="radio-base" type="radio" name="delivery-time" id="now" checked>
+                        <label class="basic-input radio-input left" for="now">На сейчас</label>
+
+                        <input class="radio-base" type="radio" name="delivery-time" id="the-time">
+                        <label class="basic-input radio-input right" for="the-time">На время</label>
+                    </div>
+
+                    <div class="email">
+                        <input type="email" placeholder="E-mail(необязательно)" class="mail">
+                    </div>
+
+            
+
+
+                </div>
+
+            </div>
+
+                    <button class="order">Оформить заказ</button>
+
+                        <p class="public-oferta">Нажимая на кнопку Оформить заказ, 
+                            Вы подтверждаете свое согласие 
+                            на обработку персональных данных 
+                            в соответствии с 
+                            <span class="public-oferta button">Публичной оффертой</span>
+                        </p>
+
+
+        </form>
+
+
+
+    </section>
+
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.make-order {
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    border-bottom: 0.5px solid #A4ACAD;
+    padding: 10px 0 10px 100px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.go-back-info, .phone-description, .phone-number, .work-hours {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.go-back-info {
+    background: transparent;
+    border:transparent;
+    cursor: pointer;
+}
+
+.phone-number {
+    color: #FF9846;
+}
+
+.work-hours {
+    color: #A4ACAD;
+    font-size: 14px;
+}
+
+.go-back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.go-back-arrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FF9846;
+    margin-right: 10px;
+}
+
+.go-back-arrow::before {
+    content: '';
+    width: 7px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(6px, 12px) rotate(45deg);    
+}
+
+.go-back-arrow::after {
+    content: '';
+    width: 7px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(6px, 7px) rotate(-45deg);    
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.form {
+    margin: 55px 300px 30px;
+}
+
+.basic-info {
+    margin-bottom: 20px;
+}
+
+.basic-input {
+    height: 40px;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+    width: 180px;
+}
+
+.tel-input {
+    margin-right: 15px;
+    width: 170px;
+}
+
+.name-input {
+    width: 170px;
+}
+
+.radio-base {
+    display: none;
+    
+}
+
+.radio-base:checked + .radio-input {
+    background: #FF9846;
+    color: white;
+}
+
+.radio-input {
+    display: inline-block;
+    width: 180px;
+    background-color: white;
+    cursor: pointer;    
+}
+
+.radio-input.left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.radio-input.right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -5px;
+}
+
+.type-of-payment {
+    margin-bottom: 20px;
+}
+
+.change {
+    display: flex;
+    align-items: center;
+
+}
+
+.comments-to-order {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.comments {
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    border: transparent;
+    padding-left: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #A4ACAD;
+}
+
+.remove {
+    width: 10px;
+    border-bottom: 3px solid black;
+    margin-bottom: 9px;
+}
+
+.add {
+    width: 19.28px;
+    height: 19.28px;
+    border-radius: 50%;
+    background: #FF9846;
+}
+
+.add::before {
+    content: '';
+    width: 10.12px;
+    border-bottom: 2px solid white;
+    position: absolute;
+    transform: translate(5px, 8px) rotate(90deg);    
+}
+
+.add:after {
+    content: '';
+    width: 10.12px;
+    border-bottom: 2px solid white;
+    position: absolute;
+    transform: translate(5px, 9px) rotate(180deg);  
+}
+
+.more-options {
+    display: flex;
+    width: 360px;
+    justify-content: space-between;
+}
+
+.more-ortions-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.more-options-ten {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.change-arrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FF9846;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.change-arrow::before {
+    content: '';
+    width: 9px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(7px, 8px) rotate(120deg);    
+}
+
+.change-arrow::after {
+    content: '';
+    width: 7px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(3px, 10px) rotate(-150deg);    
+}
+
+.change-input {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: -0.5px;
+    margin-right: 10px;
+}
+
+.change-input.change {
+    height: 40px;
+    width: 152px;
+    border-radius: 5px;
+    border: transparent;
+    padding-left: 10px;
+}
+
+.promocode {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.promo {
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    border: transparent;
+    padding-left: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #A4ACAD;
+}
+
+.order {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    width: 760px;
+    height: 45px;
+    background-color: #F46D40;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: transparent;
+    padding-left: 313px;
+    margin-bottom: 12px;
+}
+
+.public-oferta {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    width: 760px;
+}
+
+.public-oferta.button {
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.take-away {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.part-of-form {
+    display: flex;
+    width: 760px;
+    justify-content: space-between;
+}
+
+.adress-info, .adress-info-details {
+    margin-bottom: 20px;
+}
+
+.adress-input {
+    height: 40px;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+}
+
+.street-input {
+    margin-right: 10px;
+    width: 260px;
+}
+
+.house-input, .aprt-input, .entrance-input, .floor-input, .code-input {
+    width: 80px;
+}
+
+.aprt-input, .entrance-input {
+    margin-right: 8px;
+}
+
+.entrance-input {
+    font-size: 14px;
+}
+
+.floor-input {
+    margin-right: 8px;
+}
+
+.delivery {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.mail {
+    width: 354px;
+    height: 40px;
+    border-radius: 5px;
+    border: transparent;
+    padding-left: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #A4ACAD;
+}
+
+
+
+
+
